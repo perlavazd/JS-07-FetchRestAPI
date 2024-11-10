@@ -54,8 +54,13 @@ function pokeCard (id, name, weight, image) {
 
 //GET LOCAlSTORAGE
 
-
-
+function pokemonLocalstorage() {
+    const pokemonIdLocalstorage = localStorage.getItem("pokemonId");
+    const pokemonNameLocalstorage = localStorage.getItem("pokemonName");
+    const pokemonWeightLocalstorage = localStorage.getItem("pokemonWeight");
+    const pokemonImagetLocalstorage = localStorage.getItem("pokemonImage");
+    pokeCard (pokemonIdLocalstorage, pokemonNameLocalstorage, pokemonWeightLocalstorage, pokemonImagetLocalstorage);
+};
 
 
 //GET 
